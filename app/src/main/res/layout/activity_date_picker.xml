@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePicker">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="80dp"
+        android:background="@drawable/header_register">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+
+        android:transitionName="tvLogin"
+        android:text="Schedule an Appointment"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/header"
+        android:src="@drawable/circletransparant"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-100dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginStart="225dp"
+        android:src="@drawable/circletransparant" />
+
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/circle" />
+
+
+    <CalendarView
+        android:id="@+id/CalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="376dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="226dp"
+        android:outlineSpotShadowColor="@color/colorPurple"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="129dp"
+        android:focusedMonthDateColor="#8A2BE2"
+        android:outlineAmbientShadowColor="#8A2BE2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_toEndOf="@+id/image2"
+        android:text="Text view"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/discription1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:text="Email"
+        android:layout_toEndOf="@+id/image2"
+        android:textColor="@color/colorPurple"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

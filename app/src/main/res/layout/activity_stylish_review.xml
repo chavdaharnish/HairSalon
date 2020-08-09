@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StylishReview">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="175dp"
+        android:background="@drawable/header_login">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stylish Review"
+        android:elevation="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"/>
+
+
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:elevation="5dp"
+        android:layout_below="@id/tvDesc"
+        android:layout_alignLeft="@id/tvDesc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/header"
+        android:src="@drawable/circletransparant"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/circletransparant" />
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                app:cardElevation="2dp">
+
+
+                <RelativeLayout
+                    android:layout_width="358dp"
+                    android:layout_height="350dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="50dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Selected hair Style"
+                        android:textSize="20sp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/colorPurple" />
+
+                    <ImageView
+                        android:id="@+id/styleimage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/stylename"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="70dp"
+                        android:text="Hair Style name"
+                        android:layout_toEndOf="@+id/image1"
+                        android:textColor="@color/colorPurple"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/styleprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="120dp"
+                        android:textSize="15sp"
+                        android:text="Hair Style price"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/colorPurple"
+                        android:layout_toEndOf="@+id/image1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Your Selected Hair Stylish"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="20sp"
+                        android:layout_marginTop="170dp" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="200dp"/>
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:layout_toEndOf="@+id/image1"
+                        android:gravity="center"
+                        android:text="Text view"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="20dp"
+                        android:layout_marginStart="50dp"/>
+
+                    <TextView
+                        android:id="@+id/discription"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="240dp"
+                        android:layout_toEndOf="@+id/image1"
+                        android:text="Email"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="15dp"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:layout_alignLeft="@id/cv"
+                android:layout_alignRight="@id/cv"
+                android:layout_marginTop="-50dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
+
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:text="Schedule an Appointment"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_ui"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/cv"
+                android:layout_alignTop="@id/cv"
+                android:layout_marginRight="-20dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-20dp"
+
+                android:elevation="15dp">
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+

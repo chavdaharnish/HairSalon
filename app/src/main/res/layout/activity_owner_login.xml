@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".OwnerLogin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header2"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="220dp"
+        android:background="@drawable/header_login"/>
+
+    <TextView
+        android:id="@+id/tvDesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Your Online Shop"
+        android:elevation="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:elevation="5dp"
+        android:layout_below="@id/tvDesc2"
+        android:layout_alignStart="@id/tvDesc2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/header2"
+        android:src="@drawable/circletransparant"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-100dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/circle02"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle03"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle04"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toStartOf="@+id/circle03"
+        android:src="@drawable/circletransparant" />
+
+
+
+    <ScrollView
+        android:id="@+id/sv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/ownerlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textEmailAddress"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password:"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold"
+                        android:textSize="14sp">
+
+                    </TextView>
+                    <EditText
+                        android:id="@+id/ownerpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword">
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv02"
+                android:layout_alignStart="@id/cv02"
+                android:layout_alignEnd="@id/cv02"
+                android:layout_marginTop="-50dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
+
+                <Button
+                    android:id="@+id/ownersignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_ui"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/cv02"
+                android:layout_alignTop="@id/cv02"
+                android:layout_marginRight="-20dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-20dp"
+                android:elevation="15dp">
+
+                <ImageButton
+                    android:id="@+id/ownernewuser"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_ui"
+                    android:src="@drawable/ic_add"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/ownerLoginProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="280dp"/>
+
+            <TextView
+                android:id="@+id/ownerforgotpass"
+                android:text="Forgot Password"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/colorPurple"
+                android:layout_marginTop="320dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/lockingperpose"
+                android:textSize="1sp"
+                android:gravity="center"
+                android:textColor="@color/colorPurple"
+                android:layout_marginTop="320dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

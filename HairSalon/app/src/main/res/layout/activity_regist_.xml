@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regist_Act"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/rimage"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:background="@drawable/login" />
+
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rimage"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/insert_button"
+        android:ems="10"
+        android:hint="Email/Mobile No."
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/insert_button"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="New User? Signup"
+        android:textColor="#AEE51E1E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="#030EE5"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="300dp"
+        android:background="@drawable/insert_button"
+        android:text="submit" />
+
+
+</RelativeLayout>

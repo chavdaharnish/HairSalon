@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUser">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:background="@drawable/saloonimage" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="5dp"
+        android:textColor="#FB8C00"
+        android:gravity="center"
+        android:hint="FullName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/user_eid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#FB8C00"
+        android:hint="example@gmail.com"
+        android:inputType="textWebEmailAddress" />
+
+    <EditText
+        android:id="@+id/ps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_eid"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#FB8C00"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/ps2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ps"
+        android:layout_marginTop="15dp"
+        android:textColor="#FB8C00"
+        android:gravity="center"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ps2"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:background="@drawable/button_bg"
+        android:textSize="20sp" />
+
+</RelativeLayout>

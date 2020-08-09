@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hairsalon">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".StylishReview"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".Setting"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".HairStyle"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".Orders"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name=".HairStylistForgotPassword"
+            android:theme="@style/AppTheme.FullScreen"/>
+        <activity
+            android:name=".OwnerSignUP"
+            android:theme="@style/AppTheme.FullScreen" />
+
+        <activity android:name=".DatePicker"
+            android:theme="@style/AppTheme.FullScreen"/>
+
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.FullScreen" />
+
+        <activity
+            android:name=".OwnerLogin"
+            android:theme="@style/AppTheme.FullScreen">
+        </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".CustomerSideUpdates"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ImageActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".ImageUploadAct"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".SearchingActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".FingerPrint"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NewUser"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".OtpVar"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Regist_Act"
+            android:theme="@style/AppTheme.FullScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

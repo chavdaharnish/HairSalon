@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_view_upload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:src="@color/colorPurple"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_view_price"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Price"
+
+                    android:shadowColor="@color/colorBlue"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

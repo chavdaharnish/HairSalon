@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpVar">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Just A Second OTP Is On It's Way"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:digits="0123456789"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:hint="Enter One Time Password"
+        android:inputType="phone"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCode"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/buttonResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCode"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="20dp"
+        android:text="Resend" />
+</RelativeLayout>
